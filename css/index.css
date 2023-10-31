@@ -1,0 +1,107 @@
+.WeldStatisticalAnalysis {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.WeldStatisticalAnalysis .ChartItem {
+    display: flex;
+    border: 1rem solid #C4C9D1;
+    margin-bottom: 16rem;
+}
+
+/*饼图模块公共样式start*/
+.PieChart {
+    position: relative;
+    width: 440rem;
+    height: 210rem;
+    padding: 10rem 12rem;
+    border-right: 1rem solid #c8ccd4;
+}
+
+.PieChart .PieChartTip {
+    position: absolute;
+    padding-left: 1.5rem;
+}
+
+.PieChart .PieChartTip .PieChartTip_title {
+    text-align: left;
+    font-size: 18rem;
+    color: #0078D7;
+}
+
+.PieChart .PieChartTip .PieChartTip_text {
+    margin-top: 8rem;
+    text-align: left;
+    font-size: 12rem;
+    line-height: 16rem;
+    color: #2D3B4E;
+}
+
+.PieChart .PieChartSVG {
+    width: 395rem;
+    height: 210rem;
+    transform: translate(30rem, 0rem);
+}
+
+/*饼图模块公共样式end*/
+
+/*直方图模块公共样式start*/
+
+.DirectChart {
+    width: 800rem;
+}
+
+.DirectChart .DirectChartSVG {
+    width: 800rem;
+    height: 192rem;
+    transform: translate(0rem, 12rem);
+}
+
+/*直方图模块公共样式end*/
+
+/*缺陷统计模块样式start*/
+.DefectStatistic .PieChart .PieChartSVG {
+    width: 545rem;
+    height: 160rem;
+    transform: translate(-130rem, 15rem);
+}
+
+@media screen and (min-width: 768px) {
+    text {
+        font-size: 10px !important;
+    }
+    .DefectStatistic .PieChart .PieChartSVG {
+        width: 565rem;
+        transform: translate(-145rem, 15rem);
+    }
+}
+@media screen and (min-width: 960px) {
+    text {
+        font-size: 10px !important;
+    }
+    .DefectStatistic .PieChart .PieChartSVG {
+        width: 560rem;
+        height: 170rem;
+    }
+}
+@media screen and (min-width: 1200px) {
+    text {
+        font-size: 12px !important;
+    }
+    .PieChart .PieChartSVG {
+        width: 380rem;
+    }
+    .DefectStatistic .PieChart .PieChartSVG {
+        width: 530rem;
+        transform: translate(-120rem, 20rem);
+    }
+}
+
+@media screen and (min-width: 1500px) {
+    text {
+        font-size: 14px !important;
+    }
+}
+
+/*缺陷统计模块样式end*/

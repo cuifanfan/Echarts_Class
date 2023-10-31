@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/index.css">
+
+</head>
+
+<body>
+    <div class="WeldStatisticalAnalysis" id="WeldStatisticalAnalysis">
+        <!--零件合格率模块start-->
+        <div class="PartQualificationRate ChartItem" id="PartQualificationRate">
+            <!--零件合格率饼图模块start-->
+            <div class="PieChart" id="PartQualificationRate_1">
+                <div class="PieChartTip" id="PartQualificationRate_2">
+                    <h3 class="PieChartTip_title" id="PartQualificationRate_3">零件合格率</h3>
+                    <p class="PieChartTip_text" id="PartQualificationRate_4">共检测（件）: </p>
+                    <p class="PieChartTip_text" id="PartQualificationRate_5">共合格: </p>
+                    <p class="PieChartTip_text" id="PartQualificationRate_6">缺陷件: </p>
+                </div>
+                <div class="PieChartSVG" id="PartQualificationRatePieChart"></div>
+            </div>
+            <!--零件合格率饼图模块end-->
+
+            <!--零件合格率直方图模块start-->
+            <div class="DirectChart" id="DirectChart_1">
+                <div class="DirectChartSVG" id="PartQualificationRateDirectChart"></div>
+            </div>
+            <!--零件合格率直方图模块end-->
+        </div>
+        <!--零件合格率模块start-->
+
+        <!--焊缝合格率模块start-->
+        <div class="WeldLineQualificationRate ChartItem" id="WeldLineQualificationRate">
+            <!--焊缝合格率饼图模块start-->
+            <div class="PieChart" id="WeldLineQualificationRate_1">
+                <div class="PieChartTip" id="WeldLineQualificationRate_2">
+                    <h3 class="PieChartTip_title" id="WeldLineQualificationRate_3">焊缝合格率</h3>
+                    <p class="PieChartTip_text" id="WeldLineQualificationRate_4">共检测（件）: </p>
+                    <p class="PieChartTip_text" id="WeldLineQualificationRate_5">共合格: </p>
+                    <p class="PieChartTip_text" id="WeldLineQualificationRate_6">缺陷件: </p>
+                </div>
+                <div class="PieChartSVG" id="WeldLineQualificationRatePieChart"></div>
+            </div>
+            <!--焊缝合格率饼图模块end-->
+
+            <!--焊缝合格率直方图模块start-->
+            <div class="DirectChart" id="DirectChart_2">
+                <div class="DirectChartSVG" id="WeldLineQualificationRateDirectChart"></div>
+            </div>
+            <!--焊缝合格率直方图模块end-->
+        </div>
+        <!--焊缝合格率模块end-->
+
+        <!--缺陷统计模块start-->
+        <div class="DefectStatistic ChartItem" id="DefectStatistic">
+            <!--缺陷统计饼图模块start-->
+            <div class="PieChart" id="DefectStatistic_1">
+                <div class="PieChartTip" id="DefectStatistic_2">
+                    <h3 class="PieChartTip_title" id="DefectStatistic_3">缺陷统计</h3>
+                </div>
+                <div class="PieChartSVG" id="DefectStatisticPieChart"></div>
+            </div>
+            <!--缺陷统计饼图模块end-->
+
+            <!--缺陷统计直方图模块start-->
+            <div class="DirectChart" id="DirectChart_3">
+                <div class="DirectChartSVG" id="DefectStatisticDirectChart"></div>
+            </div>
+            <!--缺陷统计直方图模块end-->
+        </div>
+        <!--缺陷统计模块end-->
+    </div>
+    <script src="js/echarts.min.js"></script>
+    <script src="js/index.babel.js"></script>
+</body>
+
+</html>

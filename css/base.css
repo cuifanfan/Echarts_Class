@@ -1,0 +1,17 @@
+ * {
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+ }
+
+ html {
+   font-size: calc(100vw / 1280);
+ }
+
+ body {
+   padding: 16rem;
+ }
+
+ text {
+   font-size: 8rem !important;
+ }
